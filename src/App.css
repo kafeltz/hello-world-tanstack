@@ -1,3 +1,12 @@
+.GlobalLoading {
+  height: 3px;
+  background-color: #F00;
+  position: static;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
 .App {
   text-align: center;
 }
@@ -15,7 +24,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +44,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.Pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Pagination ul {
+  display: flex;
+  list-style: none;
+}
+
+.Pagination ul li {
+  display: block;
+  border: 1px solid #aaa;
+  margin-right: 3px;
+  padding: 3px 6px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.Pagination ul li.active {
+  background-color: #555;
+  cursor: auto;
 }
